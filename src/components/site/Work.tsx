@@ -148,20 +148,23 @@ function WorkItem({ p }: { p: Project }) {
   );
 }
 
-export default function Work() {
+/** `heading` off when the page already carries its own title. */
+export default function Work({ heading = true }: { heading?: boolean }) {
   return (
     <section id="work" className="mx-auto max-w-6xl px-6 pt-24 sm:pt-32">
-      <div className="mx-auto max-w-2xl text-center">
-        <Eyebrow>Work We&apos;re Proud Of</Eyebrow>
-        <h2 className="display mt-5 text-balance text-3xl leading-[1.12] text-white sm:text-[2.6rem]">
-          Recent work
-        </h2>
-        <p className="mt-4 text-sm leading-relaxed text-muted">
-          Real projects, real results.
-        </p>
-      </div>
+      {heading && (
+        <div className="mx-auto max-w-2xl text-center">
+          <Eyebrow>Work We&apos;re Proud Of</Eyebrow>
+          <h2 className="display mt-5 text-balance text-3xl leading-[1.12] text-white sm:text-[2.6rem]">
+            Recent work
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-muted">
+            Real projects, real results.
+          </p>
+        </div>
+      )}
 
-      <div className="mt-16 space-y-20">
+      <div className={`${heading ? "mt-16" : ""} space-y-20`}>
         {projects.map((p) => (
           <WorkItem key={p.title} p={p} />
         ))}
