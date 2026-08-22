@@ -33,6 +33,7 @@ const people: Person[] = [
     role: "Chief Technology Officer",
     bio: "Owns architecture and engineering standards across every build — from the data model to what finally reaches production.",
     focus: ["Architecture", "Standards", "Code review"],
+    image: "/team/aliyu.png",
   },
   {
     name: "Ibrahim Ismail",
