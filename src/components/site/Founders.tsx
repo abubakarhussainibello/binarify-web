@@ -23,10 +23,34 @@ const people: Person[] = [
   },
   {
     name: "Abubakar Bello",
-    role: "Co-founder & Chief Operating Officer",
+    role: "Co-founder & Managing Partner",
     bio: "Runs delivery and engineering operations — how every build gets scoped, staffed and shipped, and how it stays on schedule once it is.",
     focus: ["Delivery", "Engineering ops", "Quality"],
     image: "/team/abubakar.png",
+  },
+  {
+    name: "Aliyu Kamilu",
+    role: "Chief Technology Officer",
+    bio: "Owns architecture and engineering standards across every build — from the data model to what finally reaches production.",
+    focus: ["Architecture", "Standards", "Code review"],
+  },
+  {
+    name: "Ibrahim Ismail",
+    role: "Chief Product Officer",
+    bio: "Turns a rough concept into a scoped, sequenced build, then holds the line on what actually ships inside the thirty days.",
+    focus: ["Product", "Scoping", "Roadmap"],
+  },
+  {
+    name: "Nurudeen Aliyu",
+    role: "Chief Delivery Officer",
+    bio: "Certified project manager and senior engineer. Runs delivery so every milestone lands on the date it was promised.",
+    focus: ["Delivery", "Milestones", "Risk"],
+  },
+  {
+    name: "Muhammad Gimba",
+    role: "Chief Data Officer",
+    bio: "Turns what a product records into reporting leadership can act on — dashboards, pipelines and the numbers behind decisions.",
+    focus: ["Data", "Analytics", "Reporting"],
   },
 ];
 
@@ -78,8 +102,8 @@ export default function Founders() {
         <br /> the work
       </h2>
       <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted">
-        Two founders, both on your project from the first call. You are not
-        handed to an account manager once the contract is signed.
+        A senior team, not a bench of juniors behind a sales contact. The
+        people listed here are the people your project actually runs through.
       </p>
 
       <div className="relative mt-12 overflow-hidden">
@@ -87,8 +111,8 @@ export default function Founders() {
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-full max-w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(47,107,255,0.18),rgba(47,107,255,0))] blur-2xl" />
 
         <div
-          className={`panel relative isolate grid overflow-hidden rounded-3xl ${
-            people.length > 2 ? "md:grid-cols-3" : "md:grid-cols-2"
+          className={`relative isolate grid gap-px overflow-hidden rounded-3xl border border-line bg-line ${
+            people.length > 2 ? "sm:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2"
           }`}
         >
           {/* the "&" join only makes sense for a pair */}
@@ -103,8 +127,8 @@ export default function Founders() {
           {people.map((f, i) => (
             <article
               key={f.name}
-              className={`group relative flex flex-col border-line p-7 sm:p-9 md:border-l md:first:border-l-0 ${
-                people.length > 2 ? "md:p-8" : "md:p-10"
+              className={`group relative flex flex-col bg-background p-7 transition-colors hover:bg-white/[0.02] ${
+                people.length > 2 ? "sm:p-8" : "sm:p-9 md:p-10"
               }`}
             >
               {/* top accent, lights up on hover */}
