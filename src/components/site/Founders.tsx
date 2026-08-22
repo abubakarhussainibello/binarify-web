@@ -51,6 +51,7 @@ const people: Person[] = [
     role: "Head of R&D",
     bio: "Runs research and prototyping — proving out new capability, new tooling and the data behind it before any of it reaches a client build.",
     focus: ["Research", "Prototyping", "Data"],
+    image: "/team/gimba.png",
   },
 ];
 
