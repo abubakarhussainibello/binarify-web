@@ -39,6 +39,7 @@ const people: Person[] = [
     role: "Head of Product Development",
     bio: "Turns a rough concept into a scoped, sequenced build, then holds the line on what actually ships inside the thirty days.",
     focus: ["Product", "Scoping", "Roadmap"],
+    image: "/team/ibrahim.png",
   },
   {
     name: "Nurudeen Aliyu",
