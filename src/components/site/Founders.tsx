@@ -45,6 +45,7 @@ const people: Person[] = [
     role: "Head of Product Delivery",
     bio: "Certified project manager and senior engineer. Runs delivery so every milestone lands on the date it was promised.",
     focus: ["Delivery", "Milestones", "Risk"],
+    image: "/team/nurudeen.png",
   },
   {
     name: "Muhammad Gimba",
