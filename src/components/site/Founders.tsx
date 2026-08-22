@@ -42,7 +42,7 @@ const people: Person[] = [
   },
   {
     name: "Nurudeen Aliyu",
-    role: "Head of Solutions Delivery",
+    role: "Head of Product Delivery",
     bio: "Certified project manager and senior engineer. Runs delivery so every milestone lands on the date it was promised.",
     focus: ["Delivery", "Milestones", "Risk"],
   },
