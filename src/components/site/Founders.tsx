@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Eyebrow from "./Eyebrow";
-import { ArrowUpRight } from "./icons";
+import { ArrowUpRight, LinkedIn } from "./icons";
 
 type Person = {
   name: string;
@@ -63,6 +63,10 @@ const people: Person[] = [
     links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-gimba-41a4a7aa/" }],
   },
 ];
+
+const LINK_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  LinkedIn,
+};
 
 function initials(name: string) {
   return name
@@ -173,19 +177,30 @@ export default function Founders() {
                 </div>
 
                 {f.links && f.links.length > 0 && (
-                  <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
-                    {f.links.map((l) => (
-                      <a
-                        key={l.label}
-                        href={l.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-[12px] text-muted transition-colors hover:text-white"
-                      >
-                        {l.label}
-                        <ArrowUpRight className="h-3 w-3" />
-                      </a>
-                    ))}
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {f.links.map((l) => {
+                      const Icon = LINK_ICONS[l.label];
+                      return (
+                        <a
+                          key={l.label}
+                          href={l.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${f.name} on ${l.label}`}
+                          title={`${f.name} on ${l.label}`}
+                          className="grid h-8 w-8 place-items-center rounded-lg border border-line text-muted transition-colors hover:border-brand/40 hover:bg-brand/10 hover:text-white"
+                        >
+                          {Icon ? (
+                            <Icon className="h-3.5 w-3.5" />
+                          ) : (
+                            <span className="inline-flex items-center gap-1 text-[12px]">
+                              {l.label}
+                              <ArrowUpRight className="h-3 w-3" />
+                            </span>
+                          )}
+                        </a>
+                      );
+                    })}
                   </div>
                 )}
               </div>
