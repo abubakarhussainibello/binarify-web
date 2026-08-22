@@ -2,7 +2,7 @@ import Image from "next/image";
 import Eyebrow from "./Eyebrow";
 import { ArrowUpRight } from "./icons";
 
-type Founder = {
+type Person = {
   name: string;
   role: string;
   bio: string;
@@ -13,7 +13,7 @@ type Founder = {
   links?: { label: string; href: string }[];
 };
 
-const founders: Founder[] = [
+const people: Person[] = [
   {
     name: "Samuel Adeniyi",
     role: "Co-founder & Chief Executive Officer",
@@ -40,7 +40,7 @@ function initials(name: string) {
     .toUpperCase();
 }
 
-function Portrait({ founder }: { founder: Founder }) {
+function Portrait({ founder }: { founder: Person }) {
   return (
     <div className="relative shrink-0">
       {/* halo */}
@@ -86,19 +86,26 @@ export default function Founders() {
         {/* ambient light behind the pair */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-full max-w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(47,107,255,0.18),rgba(47,107,255,0))] blur-2xl" />
 
-        <div className="panel relative isolate grid overflow-hidden rounded-3xl md:grid-cols-2">
-          {/* divider + joining node */}
-          <div className="pointer-events-none absolute bottom-0 left-1/2 top-0 hidden w-px bg-line md:block" />
-          <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 md:block">
-            <div className="grid h-10 w-10 place-items-center rounded-full border border-line bg-surface-2 shadow-[0_0_30px_rgba(47,107,255,0.35)]">
-              <span className="display text-[15px] text-brand-bright">&amp;</span>
+        <div
+          className={`panel relative isolate grid overflow-hidden rounded-3xl ${
+            people.length > 2 ? "md:grid-cols-3" : "md:grid-cols-2"
+          }`}
+        >
+          {/* the "&" join only makes sense for a pair */}
+          {people.length === 2 && (
+            <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 md:block">
+              <div className="grid h-10 w-10 place-items-center rounded-full border border-line bg-surface-2 shadow-[0_0_30px_rgba(47,107,255,0.35)]">
+                <span className="display text-[15px] text-brand-bright">&amp;</span>
+              </div>
             </div>
-          </div>
+          )}
 
-          {founders.map((f, i) => (
+          {people.map((f, i) => (
             <article
               key={f.name}
-              className="group relative flex flex-col p-7 sm:p-9 md:p-10"
+              className={`group relative flex flex-col border-line p-7 sm:p-9 md:border-l md:first:border-l-0 ${
+                people.length > 2 ? "md:p-8" : "md:p-10"
+              }`}
             >
               {/* top accent, lights up on hover */}
               <span className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-bright/0 to-transparent transition-all duration-500 group-hover:via-brand-bright/60" />
