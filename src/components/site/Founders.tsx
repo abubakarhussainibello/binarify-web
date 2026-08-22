@@ -20,6 +20,7 @@ const people: Person[] = [
     bio: "Leads client strategy and commercial delivery. Sits in on every scoping call, so the person setting the timeline is the person accountable for it.",
     focus: ["Client strategy", "Commercial", "Scoping"],
     image: "/team/samuel.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/samuel-adeniyi-862279149/" }],
   },
   {
     name: "Abubakar Bello",
@@ -27,6 +28,7 @@ const people: Person[] = [
     bio: "Runs delivery and engineering operations — how every build gets scoped, staffed and shipped, and how it stays on schedule once it is.",
     focus: ["Delivery", "Engineering ops", "Quality"],
     image: "/team/abubakar.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/abubakar-bello-cdpo-a52224140/" }],
   },
   {
     name: "Aliyu Kamilu",
@@ -34,6 +36,7 @@ const people: Person[] = [
     bio: "Owns architecture and engineering standards across every build — from the data model to what finally reaches production.",
     focus: ["Architecture", "Standards", "Code review"],
     image: "/team/aliyu.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/aliyu-kamilu-7a5666194/" }],
   },
   {
     name: "Ibrahim Ismail",
@@ -41,6 +44,7 @@ const people: Person[] = [
     bio: "Turns a rough concept into a scoped, sequenced build, then holds the line on what actually ships inside the thirty days.",
     focus: ["Product", "Scoping", "Roadmap"],
     image: "/team/ibrahim.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/ibrahim-ismail-1ba7a4151/" }],
   },
   {
     name: "Nurudeen Aliyu",
@@ -48,6 +52,7 @@ const people: Person[] = [
     bio: "Certified project manager and senior engineer. Runs delivery so every milestone lands on the date it was promised.",
     focus: ["Delivery", "Milestones", "Risk"],
     image: "/team/nurudeen.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/deenaliyu/" }],
   },
   {
     name: "Muhammad Gimba",
@@ -55,6 +60,7 @@ const people: Person[] = [
     bio: "Runs research and prototyping — proving out new capability, new tooling and the data behind it before any of it reaches a client build.",
     focus: ["Research", "Prototyping", "Data"],
     image: "/team/gimba.png",
+    links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-gimba-41a4a7aa/" }],
   },
 ];
 
@@ -172,6 +178,8 @@ export default function Founders() {
                       <a
                         key={l.label}
                         href={l.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-[12px] text-muted transition-colors hover:text-white"
                       >
                         {l.label}
