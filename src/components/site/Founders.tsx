@@ -48,9 +48,9 @@ const people: Person[] = [
   },
   {
     name: "Muhammad Gimba",
-    role: "Head of Data & Analytics",
-    bio: "Turns what a product records into reporting leadership can act on — dashboards, pipelines and the numbers behind decisions.",
-    focus: ["Data", "Analytics", "Reporting"],
+    role: "Head of R&D",
+    bio: "Runs research and prototyping — proving out new capability, new tooling and the data behind it before any of it reaches a client build.",
+    focus: ["Research", "Prototyping", "Data"],
   },
 ];
 
