@@ -36,19 +36,19 @@ const people: Person[] = [
   },
   {
     name: "Ibrahim Ismail",
-    role: "Chief Product Officer",
+    role: "Head of Product Development",
     bio: "Turns a rough concept into a scoped, sequenced build, then holds the line on what actually ships inside the thirty days.",
     focus: ["Product", "Scoping", "Roadmap"],
   },
   {
     name: "Nurudeen Aliyu",
-    role: "Chief Delivery Officer",
+    role: "Head of Solutions Delivery",
     bio: "Certified project manager and senior engineer. Runs delivery so every milestone lands on the date it was promised.",
     focus: ["Delivery", "Milestones", "Risk"],
   },
   {
     name: "Muhammad Gimba",
-    role: "Chief Data Officer",
+    role: "Head of Data & Analytics",
     bio: "Turns what a product records into reporting leadership can act on — dashboards, pipelines and the numbers behind decisions.",
     focus: ["Data", "Analytics", "Reporting"],
   },
