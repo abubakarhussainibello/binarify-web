@@ -16,14 +16,14 @@ type Person = {
 const people: Person[] = [
   {
     name: "Samuel Adeniyi",
-    role: "Co-founder & Chief Executive Officer",
+    role: "Chief Executive Officer",
     bio: "Leads client strategy and commercial delivery. Sits in on every scoping call, so the person setting the timeline is the person accountable for it.",
     focus: ["Client strategy", "Commercial", "Scoping"],
     image: "/team/samuel.png",
   },
   {
     name: "Abubakar Bello",
-    role: "Co-founder & Managing Partner",
+    role: "Managing Partner",
     bio: "Runs delivery and engineering operations — how every build gets scoped, staffed and shipped, and how it stays on schedule once it is.",
     focus: ["Delivery", "Engineering ops", "Quality"],
     image: "/team/abubakar.png",
