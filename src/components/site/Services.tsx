@@ -63,11 +63,11 @@ export default function Services() {
       <div className="mx-auto max-w-2xl text-center">
         <Eyebrow>What We Build</Eyebrow>
         <h2 className="display mt-5 text-balance text-3xl leading-[1.12] text-white sm:text-[2.6rem]">
-          Powerful engineering,
-          <br /> infinite possibilities
+          Engineering that ships,
+          <br /> brand that lands
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
-          Connect your product to the team that ships it every day.
+          From the architecture underneath to the way it looks on the day it launches.
         </p>
       </div>
 

@@ -1,5 +1,6 @@
 import Hero from "@/components/site/Hero";
 import Services from "@/components/site/Services";
+import BrandCreative from "@/components/site/BrandCreative";
 import Growth from "@/components/site/Growth";
 import Problems from "@/components/site/Problems";
 import HowItWorks from "@/components/site/HowItWorks";
@@ -14,6 +15,7 @@ export default function Home() {
     <div id="top" className="min-h-screen bg-background">
       <Hero />
       <Services />
+      <BrandCreative />
       <Problems />
       <HowItWorks />
       <Growth />

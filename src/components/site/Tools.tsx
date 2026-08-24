@@ -11,21 +11,35 @@ import {
   DockerLogo,
   TsLogo,
   AwsLogo,
+  NextLogo,
+  FigmaLogo,
+  PhotoshopLogo,
+  IllustratorLogo,
+  PremiereLogo,
+  AfterEffectsLogo,
+  BlenderLogo,
 } from "./tech-icons";
 
+/* Eighteen tiles — three clean rows of six on desktop. */
 const tools = [
   { Icon: ReactLogo, label: "React" },
+  { Icon: NextLogo, label: "Next.js" },
   { Icon: LaravelLogo, label: "Laravel" },
   { Icon: FlutterLogo, label: "Flutter" },
   { Icon: TailwindLogo, label: "Tailwind" },
   { Icon: JsLogo, label: "JavaScript" },
-  { Icon: PostgresLogo, label: "Postgres" },
+  { Icon: TsLogo, label: "TypeScript" },
   { Icon: NodeLogo, label: "Node" },
+  { Icon: PostgresLogo, label: "Postgres" },
   { Icon: MongoLogo, label: "MongoDB" },
   { Icon: DockerLogo, label: "Docker" },
-  { Icon: TsLogo, label: "TypeScript" },
   { Icon: AwsLogo, label: "AWS" },
-  { Icon: TailwindLogo, label: "Design System" },
+  { Icon: FigmaLogo, label: "Figma" },
+  { Icon: PhotoshopLogo, label: "Photoshop" },
+  { Icon: IllustratorLogo, label: "Illustrator" },
+  { Icon: PremiereLogo, label: "Premiere Pro" },
+  { Icon: AfterEffectsLogo, label: "After Effects" },
+  { Icon: BlenderLogo, label: "Blender" },
 ];
 
 export default function Tools() {
@@ -34,10 +48,11 @@ export default function Tools() {
       <div className="mx-auto max-w-2xl text-center">
         <Eyebrow>Tools We Use</Eyebrow>
         <h2 className="display mt-5 text-balance text-3xl leading-[1.12] text-white sm:text-[2.6rem]">
-          Built with proven tools
+          The stack behind
+          <br /> both halves
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
-          Six years in production with every one of them.
+          What we build with, and what we design and cut with.
         </p>
       </div>
 

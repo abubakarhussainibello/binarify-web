@@ -153,8 +153,8 @@ export default function Hero() {
           <br /> 30 days, not 6 months
         </h1>
         <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">
-          Battle-tested code. Enterprise-grade. AI-accelerated. Stop losing to
-          competitors who ship faster.
+          Battle-tested code, enterprise-grade and AI-accelerated — with the
+          brand, video and design to launch it properly.
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-3">

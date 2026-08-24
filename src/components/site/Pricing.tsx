@@ -10,6 +10,8 @@ import {
   Phone,
   Sparkles,
   Handover,
+  Palette,
+  Video,
   Plus,
 } from "./icons";
 import BookCallButton from "./BookCall";
@@ -20,6 +22,8 @@ const TYPES = [
   { key: "mobile", label: "Mobile App", Icon: Phone },
   { key: "ai", label: "AI Product", Icon: Sparkles },
   { key: "ppp", label: "Government / PPP", Icon: Handover },
+  { key: "branding", label: "Branding / Creative", Icon: Palette },
+  { key: "video", label: "Video / Motion", Icon: Video },
   { key: "other", label: "Something else", Icon: Plus },
 ];
 
@@ -217,7 +221,7 @@ export default function Pricing() {
                   options={TYPES}
                   value={type}
                   onChange={setType}
-                  columns="sm:grid-cols-3"
+                  columns="sm:grid-cols-2 lg:grid-cols-4"
                 />
               </Field>
 

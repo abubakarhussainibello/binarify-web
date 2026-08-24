@@ -181,3 +181,42 @@ export function LinkedIn({ className = "", ...p }: P) {
     </svg>
   );
 }
+
+export function Palette(p: P) {
+  return (
+    <svg viewBox="0 0 24 24" {...s} {...p}>
+      <path d="M12 21a9 9 0 1 1 9-9c0 1.66-1.34 2.5-3 2.5h-1.5a2 2 0 0 0-1.4 3.42A2 2 0 0 1 12 21z" />
+      <circle cx="7.5" cy="12" r="1" />
+      <circle cx="10" cy="8" r="1" />
+      <circle cx="15" cy="8.5" r="1" />
+    </svg>
+  );
+}
+
+export function Compass(p: P) {
+  return (
+    <svg viewBox="0 0 24 24" {...s} {...p}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M15.5 8.5l-2 5.2-5.2 2 2-5.2z" />
+    </svg>
+  );
+}
+
+export function Video(p: P) {
+  return (
+    <svg viewBox="0 0 24 24" {...s} {...p}>
+      <rect x="3" y="6" width="12" height="12" rx="2" />
+      <path d="M15 10.5l6-3.2v9.4l-6-3.2z" />
+    </svg>
+  );
+}
+
+export function Motion(p: P) {
+  return (
+    <svg viewBox="0 0 24 24" {...s} {...p}>
+      <path d="M3 16c4.5 0 5.5-8 10-8 2.2 0 3.4 1.5 4 3" />
+      <path d="M14 6h3.5V9.5" />
+      <circle cx="5" cy="19" r="1.6" />
+    </svg>
+  );
+}
