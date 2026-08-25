@@ -62,6 +62,13 @@ const people: Person[] = [
     image: "/team/gimba.png",
     links: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-gimba-41a4a7aa/" }],
   },
+  {
+    name: "Lydia Oladiran",
+    role: "Head of Business Development",
+    bio: "Opens the conversations that turn into projects — new clients, partnerships, and keeping the ones we have close.",
+    focus: ["Partnerships", "Pipeline", "Client relations"],
+    image: "/team/lydia.png",
+  },
 ];
 
 const LINK_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -206,6 +213,11 @@ export default function Founders() {
               </div>
             </article>
           ))}
+
+          {/* completes the final row so no empty cell shows the divider colour:
+              7 + 1 = 8 at two columns, 7 + 2 = 9 at three */}
+          <div aria-hidden className="hidden bg-background sm:block lg:block" />
+          <div aria-hidden className="hidden bg-background lg:block" />
         </div>
       </div>
     </section>
